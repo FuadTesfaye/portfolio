@@ -15,7 +15,7 @@ function subscribe(callback: () => void) {
 function getSnapshot(): "light" | "dark" {
   if (typeof window === "undefined") return "light";
   const saved = localStorage.getItem("theme");
-  if (saved === "dark" || (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+  if (saved === "dark") {
     return "dark";
   }
   return "light";
@@ -40,10 +40,10 @@ export default function ThemeToggle() {
       type="button"
       onClick={toggle}
       className="theme-toggle-btn"
-      aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
-      title={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+      aria-label={`Switch to ${theme === "light" ? "Blue" : "White"} theme`}
+      title={`Switch to ${theme === "light" ? "Blue (Blueprint)" : "White"} theme`}
     >
-      {theme === "light" ? "DARK" : "LIGHT"}
+      {theme === "light" ? "BLUE" : "WHITE"}
     </button>
   );
 }

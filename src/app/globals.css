@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #f2d99b;
-  --ink: #1c1a17;
-  --soft: #4a4338;
+  --bg: #ffffff;
+  --ink: #071f3d;
+  --soft: #4b688c;
   box-sizing: border-box;
   padding-top: env(safe-area-inset-top, 0px);
   padding-bottom: env(safe-area-inset-bottom, 0px);
@@ -11,22 +11,22 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #2a2418;
-    --ink: #f2e3bd;
-    --soft: #cdbf9a;
+    --bg: #07162c;
+    --ink: #ffffff;
+    --soft: #8faed9;
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #2a2418;
-  --ink: #f2e3bd;
-  --soft: #cdbf9a;
+  --bg: #07162c;
+  --ink: #ffffff;
+  --soft: #8faed9;
 }
 
 :root[data-theme="light"] {
-  --bg: #f2d99b;
-  --ink: #1c1a17;
-  --soft: #4a4338;
+  --bg: #ffffff;
+  --ink: #071f3d;
+  --soft: #4b688c;
 }
 
 *,
@@ -46,8 +46,8 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-garamond), "EB Garamond", Georgia, serif;
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 20px;
+  line-height: 1.65;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -63,9 +63,9 @@ a {
 }
 
 .wrap {
-  max-width: 1100px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 28px;
+  padding: 0 30px;
 }
 
 .serif {
@@ -76,15 +76,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 28px 0 0;
-  gap: 16px;
+  padding: 32px 0 0;
+  gap: 20px;
 }
 
 .logo {
   text-decoration: none;
   font-family: var(--font-playfair), "Playfair Display", serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 38px;
   line-height: 1;
   display: block;
 }
@@ -92,19 +92,19 @@ header {
 .logo small {
   display: block;
   font-family: var(--font-garamond), "EB Garamond", serif;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
-  margin-top: 4px;
+  margin-top: 5px;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
 nav {
   display: flex;
-  gap: 24px;
-  font-size: 16px;
+  gap: 28px;
+  font-size: 18px;
   font-weight: 500;
-  padding-top: 6px;
+  padding-top: 8px;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
@@ -120,15 +120,15 @@ nav a:hover {
 
 .hero {
   display: grid;
-  grid-template-columns: 90px 190px 1fr;
-  gap: 0 18px;
-  margin-top: 44px;
+  grid-template-columns: 100px 210px 1fr;
+  gap: 0 24px;
+  margin-top: 50px;
   align-items: start;
 }
 
 .ext {
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.8;
 }
 .ext span {
   display: block;
@@ -159,32 +159,32 @@ figure svg {
 }
 
 .cap-t {
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
   color: var(--soft);
-  margin-top: 6px;
+  margin-top: 8px;
 }
 
 .intro {
-  padding: 30px 0 0 56px;
+  padding: 32px 0 0 60px;
 }
 
 .lead {
   display: flex;
-  gap: 14px;
+  gap: 16px;
   align-items: flex-start;
 }
 
 .cap {
   flex: none;
-  width: 42px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
   border: 1px solid var(--ink);
   display: grid;
   place-items: center;
   font-family: var(--font-playfair), "Playfair Display", serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
   margin-top: 2px;
   user-select: none;
 }
@@ -193,16 +193,16 @@ figure svg {
   margin: 0;
   font-family: var(--font-playfair), "Playfair Display", serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.45;
 }
 
 .small {
-  font-size: 15px;
+  font-size: 17px;
   color: var(--soft);
-  margin: 18px 0 0;
-  max-width: 440px;
-  line-height: 1.6;
+  margin: 20px 0 0;
+  max-width: 480px;
+  line-height: 1.65;
 }
 .small a {
   color: var(--ink);
@@ -210,15 +210,15 @@ figure svg {
 
 .btns {
   display: flex;
-  gap: 12px;
-  margin-top: 20px;
-  font-size: 15px;
+  gap: 14px;
+  margin-top: 24px;
+  font-size: 17px;
   font-weight: 600;
 }
 
 .btns a {
   border: 1px solid var(--ink);
-  padding: 8px 16px;
+  padding: 10px 20px;
   text-decoration: none;
   transition: all 0.15s ease;
 }
@@ -234,14 +234,14 @@ figure svg {
 
 .skills-row {
   position: relative;
-  margin-top: 56px;
+  margin-top: 64px;
 }
 
 .skills {
   margin: 0;
   font-family: var(--font-playfair), "Playfair Display", serif;
   font-weight: 900;
-  font-size: clamp(100px, 22vw, 260px);
+  font-size: clamp(115px, 24vw, 300px);
   line-height: 0.82;
   letter-spacing: -0.015em;
   white-space: nowrap;
@@ -251,18 +251,18 @@ figure svg {
   position: absolute;
   right: -6px;
   top: 0;
-  bottom: -260px;
-  width: 20px;
+  bottom: -280px;
+  width: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 13px;
+  font-size: 15px;
   text-decoration: none;
 }
 
 .learn span {
   writing-mode: vertical-rl;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .learn i {
@@ -273,153 +273,154 @@ figure svg {
 
 section.blk {
   display: grid;
-  grid-template-columns: 90px 1fr;
-  gap: 0 18px;
-  margin-top: 84px;
+  grid-template-columns: 100px 1fr;
+  gap: 0 24px;
+  margin-top: 92px;
 }
 
 .side {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--soft);
   font-style: italic;
-  padding-top: 6px;
+  padding-top: 8px;
 }
 
 .body {
-  max-width: 700px;
+  max-width: 760px;
 }
 
 .body .small {
-  max-width: 580px;
+  max-width: 620px;
+  font-size: 17px;
 }
 
 .cols {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 26px 36px;
-  margin-top: 30px;
-  max-width: 700px;
+  gap: 28px 40px;
+  margin-top: 32px;
+  max-width: 760px;
 }
 
 .cols h3,
 .rows h3 {
   font-family: var(--font-playfair), "Playfair Display", serif;
-  font-size: 18px;
-  margin: 0 0 4px;
+  font-size: 22px;
+  margin: 0 0 6px;
 }
 
 .cols .d {
-  font-size: 14px;
+  font-size: 16px;
   font-style: italic;
   color: var(--soft);
-  margin: 0 0 6px;
+  margin: 0 0 8px;
 }
 
 .cols p {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
 }
 
 .rows {
-  margin-top: 28px;
+  margin-top: 32px;
   border-top: 1px solid var(--ink);
 }
 
 .row {
   display: grid;
-  grid-template-columns: 75px 1fr;
-  gap: 6px 18px;
-  padding: 18px 0;
+  grid-template-columns: 85px 1fr;
+  gap: 8px 22px;
+  padding: 22px 0;
   border-bottom: 1px solid var(--ink);
 }
 
 .row .y {
-  font-size: 14px;
+  font-size: 16px;
   font-style: italic;
   color: var(--soft);
-  padding-top: 3px;
+  padding-top: 4px;
 }
 
 .row p {
-  margin: 4px 0 0;
-  font-size: 16px;
+  margin: 6px 0 0;
+  font-size: 18px;
   color: var(--soft);
 }
 
 .row .t {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
-  margin-top: 6px;
+  margin-top: 8px;
 }
 
 .row .t a {
-  margin-left: 10px;
+  margin-left: 12px;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
 .row ul {
-  margin: 6px 0 0;
-  padding-left: 20px;
-  font-size: 16px;
+  margin: 8px 0 0;
+  padding-left: 22px;
+  font-size: 18px;
   color: var(--soft);
 }
 
 .row li {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .more {
-  margin-top: 20px;
-  font-size: 15px;
+  margin-top: 24px;
+  font-size: 17px;
 }
 
 .more b {
   display: block;
   font-family: var(--font-playfair), "Playfair Display", serif;
-  font-size: 16px;
-  margin-bottom: 4px;
+  font-size: 19px;
+  margin-bottom: 6px;
 }
 
 .contact-links {
-  margin-top: 22px;
-  font-size: 18px;
+  margin-top: 24px;
+  font-size: 21px;
   line-height: 1.9;
 }
 
 .contact-links a {
   font-weight: 600;
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
 }
 
 .big-cta {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 24px;
   font-family: var(--font-playfair), "Playfair Display", serif;
   font-weight: 900;
-  font-size: clamp(42px, 8.5vw, 80px);
+  font-size: clamp(52px, 10vw, 96px);
   line-height: 1;
   text-decoration: underline;
-  text-underline-offset: 8px;
-  text-decoration-thickness: 1px;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 1.5px;
 }
 
 footer {
   border-top: 1px solid var(--ink);
-  margin: 100px 0 0;
-  padding: 22px 0 44px;
-  font-size: 14px;
+  margin: 110px 0 0;
+  padding: 26px 0 50px;
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
   color: var(--soft);
 }
 
 footer a {
-  margin-left: 16px;
+  margin-left: 20px;
   text-decoration: none;
 }
 footer a:hover {
@@ -431,9 +432,9 @@ footer a:hover {
   border: 1px solid var(--ink);
   color: var(--ink);
   font-family: var(--font-garamond), serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
-  padding: 3px 8px;
+  padding: 4px 10px;
   cursor: pointer;
   transition: all 0.2s ease;
   line-height: 1;
@@ -458,10 +459,18 @@ footer a:hover {
     flex-wrap: wrap;
   }
   .hero .fig-wrap {
-    max-width: 220px;
+    max-width: 240px;
   }
   .intro {
-    padding: 6px 0 0;
+    padding: 8px 0 0;
+  }
+  .cap {
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+  }
+  .lead p {
+    font-size: 20px;
   }
   .skills-row {
     margin-top: 40px;
