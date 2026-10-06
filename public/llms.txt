@@ -1,0 +1,16 @@
+# Fuad Tesfaye
+Full-Stack AI Engineer — Backend & Cloud Systems
+Location: Addis Ababa, Ethiopia (UTC+3)
+Email: fuadtesfaye24@gmail.com
+Phone: +251 92 411 3086
+
+## Current Roles
+- Founding Engineer, Zion Software Agency (01.2026—Present)
+- Full-Stack Developer, INSA (06.2025—Present)
+- Winner, Vercel v0 Global Hackathon (AlgoWars)
+
+## Core Stack
+- Next.js, React, TypeScript, Tailwind CSS
+- Node.js, Express.js, Spring Boot, C#/.NET, Python
+- PostgreSQL, Redis, MongoDB, Apache Kafka, RabbitMQ
+- Multi-agent AI orchestration, Google Gemini, OpenAI, Claude, Vercel AI SDK
