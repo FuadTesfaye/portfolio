@@ -5,6 +5,7 @@ export default function Hero() {
 
   return (
     <section className="hero" id="top">
+      {/* External Column */}
       <div className="ext">
         <span>External</span>
         {externalLinks.map((link) => (
@@ -19,6 +20,7 @@ export default function Hero() {
         ))}
       </div>
 
+      {/* Technical Drawing Box */}
       <div className="fig-wrap">
         <figure>
           <svg
@@ -43,6 +45,7 @@ export default function Hero() {
         <div className="cap-t">Fig 1 — Frontend, backend, cloud.</div>
       </div>
 
+      {/* Intro Lead Block */}
       <div className="intro">
         <div className="lead">
           <div className="cap" aria-hidden="true">
@@ -50,15 +53,28 @@ export default function Hero() {
           </div>
           <p>
             <span style={{ position: "absolute", left: "-9999px" }}>W</span>
-            {"elcome! I'm Fuad — a full-stack software engineer building modern web products, from polished interactive frontends to scalable backend systems."}
+            {"elcome! I'm Fuad — a full-stack AI engineer building production-grade, distributed, and AI-native systems."}
           </p>
         </div>
 
-        <p className="small">{personal.introBio}</p>
+        {/* NOW Banner Pill */}
+        <div className="mt-4 pt-3 border-t border-[var(--ink)]/20 text-xs sm:text-sm font-mono flex flex-wrap items-baseline gap-2">
+          <span className="font-bold border border-[var(--ink)] px-1.5 py-0.5 text-[11px] bg-[var(--ink)] text-[var(--bg)]">
+            NOW
+          </span>
+          <span className="text-[var(--soft)] font-medium">
+            {personal.nowStatus}
+          </span>
+        </div>
+
+        <p className="small">
+          Building high-throughput microservices, event-driven architectures, and AI agent orchestration from Addis Ababa, Ethiopia. Open to global remote engineering roles.
+        </p>
 
         <div className="btns">
-          <a href="#contact">Contact me</a>
           <a href="#projects">View projects</a>
+          <a href="#activity">Activity graph</a>
+          <a href="#about">About me</a>
         </div>
       </div>
     </section>

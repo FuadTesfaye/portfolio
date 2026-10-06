@@ -1,13 +1,14 @@
 import Header from "@/components/portfolio/Header";
 import Hero from "@/components/portfolio/Hero";
 import SkillsHero from "@/components/portfolio/SkillsHero";
+import ActivityGraph from "@/components/portfolio/ActivityGraph";
 import AboutSection from "@/components/portfolio/AboutSection";
 import SkillsGridSection from "@/components/portfolio/SkillsGridSection";
-import OfferingsSection from "@/components/portfolio/OfferingsSection";
-import ProjectsSection from "@/components/portfolio/ProjectsSection";
 import ExperienceSection from "@/components/portfolio/ExperienceSection";
-import ContactSection from "@/components/portfolio/ContactSection";
+import EducationSection from "@/components/portfolio/EducationSection";
+import ProjectsSection from "@/components/portfolio/ProjectsSection";
 import Footer from "@/components/portfolio/Footer";
+import CommandPalette from "@/components/portfolio/CommandPalette";
 
 export default function Home() {
   return (
@@ -16,14 +17,15 @@ export default function Home() {
       <main>
         <Hero />
         <SkillsHero />
+        <ActivityGraph />
         <AboutSection />
         <SkillsGridSection />
-        <OfferingsSection />
-        <ProjectsSection />
         <ExperienceSection />
-        <ContactSection />
+        <EducationSection />
+        <ProjectsSection />
       </main>
       <Footer />
+      <CommandPalette />
     </div>
   );
 }

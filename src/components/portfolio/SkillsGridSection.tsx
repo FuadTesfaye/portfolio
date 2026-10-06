@@ -1,11 +1,15 @@
 import { portfolioData } from "@/data/portfolioData";
 
 export default function SkillsGridSection() {
-  const { skillsLead, skillsCategories } = portfolioData;
+  const { skillsCategories } = portfolioData;
 
   return (
-    <section className="blk">
-      <div className="side">Skills &amp; technologies</div>
+    <section className="blk" id="skills">
+      <div className="side">
+        03 Stack
+        <span className="block text-[13px] opacity-75 font-normal">مهارات</span>
+      </div>
+
       <div className="body">
         <div className="lead">
           <div className="cap" aria-hidden="true">
@@ -13,16 +17,25 @@ export default function SkillsGridSection() {
           </div>
           <p>
             <span style={{ position: "absolute", left: "-9999px" }}>S</span>
-            {skillsLead.slice(1)}
+            {"tructured for maintainability, scalability, and long-term enterprise growth."}
           </p>
         </div>
 
-        <div className="cols">
+        <div className="cols mt-8">
           {skillsCategories.map((cat) => (
             <div key={cat.title}>
               <h3>{cat.title}</h3>
               <p className="d">{cat.subtitle}</p>
-              <p>{cat.skills}</p>
+              <div className="flex flex-wrap gap-1.5 mt-2">
+                {cat.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="text-sm font-medium border border-[var(--ink)]/30 px-2 py-0.5 rounded-[2px]"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
           ))}
         </div>
