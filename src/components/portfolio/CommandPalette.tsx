@@ -94,6 +94,15 @@ export default function CommandPalette() {
         },
       },
       {
+        id: "nav-contact",
+        title: "Go to 07 Contact",
+        category: "Navigation",
+        action: () => {
+          window.location.hash = "contact";
+          setIsOpen(false);
+        },
+      },
+      {
         id: "social-github",
         title: "Open GitHub Profile (@FuadTesfaye)",
         category: "Social & Contact",

@@ -7,6 +7,7 @@ import SkillsGridSection from "@/components/portfolio/SkillsGridSection";
 import ExperienceSection from "@/components/portfolio/ExperienceSection";
 import EducationSection from "@/components/portfolio/EducationSection";
 import ProjectsSection from "@/components/portfolio/ProjectsSection";
+import ContactSection from "@/components/portfolio/ContactSection";
 import Footer from "@/components/portfolio/Footer";
 import CommandPalette from "@/components/portfolio/CommandPalette";
 
@@ -23,6 +24,7 @@ export default function Home() {
         <ExperienceSection />
         <EducationSection />
         <ProjectsSection />
+        <ContactSection />
       </main>
       <Footer />
       <CommandPalette />
